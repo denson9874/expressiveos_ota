@@ -2,9 +2,9 @@
 
 Over-the-air update information for denson9874's ExpressiveOS builds: cheetah (Pixel 7 Pro).
 
-ExpressiveOS is its own ROM, built on Evolution X: its builds are signed with ExpressiveOS-only
-keys, and this repo is separate from the Evolution X and DerpFest ones. Moving between
-ExpressiveOS and another ROM, Evolution X included, always needs a clean install.
+ExpressiveOS is its own ROM: its builds are signed with ExpressiveOS-only keys, and this repo
+belongs to ExpressiveOS alone. Moving between ExpressiveOS and any other ROM always needs a clean
+install.
 
 The cheetah device tree in an ExpressiveOS build points its Updater here, at the files on `main`:
 
@@ -14,6 +14,7 @@ The cheetah device tree in an ExpressiveOS build points its Updater here, at the
   and served through the OTA mirror. `{"response": []}` means no build is published yet, and the
   Updater reports that there are no updates.
 - `changelogs/<device>.txt`: what changed in that build.
+- `devices/images/<device>.webp`: the phone's picture, shown by Settings > About phone.
 
 The release step updates both after the OTA package has been uploaded. The Updater only installs
 packages signed with ExpressiveOS's own release key.
