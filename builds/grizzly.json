@@ -1,0 +1,23 @@
+{
+  "response": [
+    {
+      "maintainer": "denson9874",
+      "currently_maintained": true,
+      "oem": "Google",
+      "device": "Pixel 11 Pro",
+      "filename": "ExpressiveOS-17.0-20261103-grizzly-1.0-Official.zip",
+      "download": "https://ota-mirror.daryldenson-apps.workers.dev/expressiveos/grizzly/ota/ExpressiveOS-17.0-20261103-grizzly-1.0-Official.zip",
+      "timestamp": 1793715778,
+      "md5": "0a7464b9b60cd509a6298a6eebd783f9",
+      "sha256": "eb826b56a1ef9e3911a71db8039a960dc07f29d7144dbfaf1b32afd6bc70c589",
+      "size": 3570222613,
+      "version": "1.0",
+      "buildtype": "user",
+      "os_patch_level": "2026-10-01",
+      "forum": "",
+      "firmware": "https://developers.google.com/android/images#grizzly",
+      "paypal": "",
+      "github": "denson9874"
+    }
+  ]
+}

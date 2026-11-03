@@ -1,0 +1,80 @@
+ExpressiveOS 1.0 for the Pixel 11 Pro Fold — First Bloom
+==============================
+
+ExpressiveOS 1.0 is the first release of ExpressiveOS, an Android 17 ROM that adds to the Pixel experience instead of taking anything away. It builds in Expressive Launcher, gathers theming into one Studio, dresses your phone up for the holidays, and keeps the stock Pixel firmware underneath. Coming from stock Android or another ROM, installing it wipes the phone, so back up first.
+
+───────────────────────
+
+✨ What's in ExpressiveOS 1.0
+==============================
+
+1. 🏠 Expressive Launcher, built in
+- Expressive Launcher is your Home screen and also runs Recents, so Overview, swipe up and quick switch all go through it.
+
+2. 🎨 Studio, with the Bloom look
+- Studio, in Settings, puts ExpressiveOS's customization in one place: themes, colours, fonts, wallpaper styles, clock styles, the lock screen, the status bar, Quick Settings and more.
+- The Bloom petal logo and palette run through Settings.
+- What's new, at the bottom of Studio, shows these notes.
+
+3. 🎃 Holiday themes
+- In Studio > Holiday themes, ExpressiveOS can dress the phone up for the holidays: wallpaper, colours, Settings icons, the Quick Settings header, the lock screen clock and the boot animation.
+- On Automatic, a theme switches on by itself at the first screen-off after midnight on the holiday's first day, and off again after its last day. A quiet notification lets you skip it for the year.
+- You can try any theme early from the same page.
+
+4. 🔄 Updates over the air
+- The built-in Updater checks for new ExpressiveOS releases and installs them over the air, with no computer needed.
+- From the next release, it also offers a smaller update made for the exact build you're on, next to the full one.
+- To install an update package you downloaded yourself, open the Updater's menu and tap Install local update.
+
+5. 🔓 Root is your choice
+- ExpressiveOS ships without root, and nothing in it needs root. If you want root, adding it is up to you.
+
+6. 📶 Your carrier features stay
+- The stock Pixel firmware, modem and IMS are kept, so calls, VoLTE and Wi-Fi Calling run on the same parts as on stock Android.
+
+───────────────────────
+
+😄 ROM Humor
+==============================
+
+🌸 Most ROMs bloom when they boot. This one checked the calendar first, then booked Thanksgiving.
+
+🔄 For its whole first month, the Updater told everyone they were up to date. Technically, it was right.
+
+───────────────────────
+
+💬 Community Notes
+==============================
+
+- Who it's for: the Pixel 11 Pro Fold (yogi) only. Install the build made for your exact phone.
+- Still being worked on:
+  - The Updater doesn't show these notes yet, but What's new in Studio does. The fix is in the next release.
+- Validation:
+
+───────────────────────
+
+🧩 Release Riddle
+==============================
+
+I wake up after midnight, wait for you to look away, and then change everything you see. When the day is over, I put it all back as if nothing happened. What am I?
+
+Answer: Holiday themes! They switch at the first screen-off after midnight, so nothing changes while you're looking. 🎃
+
+───────────────────────
+
+🛡️ Verification & Technical Details
+==============================
+
+- ROM Version: 1.0, Official
+- Build: ExpressiveOS-17.0-20261103-yogi-1.0-Official
+- Android: 17, security patch 2026-10-01
+- Fastboot package SHA-256: b12382ad9f72dbfa8b16fca6e1ee5c2e9d96359ca92954a530a3e2e5475fed05
+- Kit revision: 7fec5eed35de77dd79c502c85490fb1de9de80e6
+
+🔗 Links & Downloads:
+- Web installer: https://expressiveos-flash.daryldenson-apps.workers.dev
+- Downloads: https://sourceforge.net/projects/denson9874-s-user-builds/files/expressiveos/yogi/
+- Source code: https://github.com/ExpressiveOS
+- Announcements Channel: @ExpressiveGroup (https://t.me/ExpressiveGroup)
+
+ExpressiveOS is an independent ROM, made by denson9874 with Claude (Anthropic's AI) as its development partner. It's built on LineageOS and AOSP and started from Evolution X's open source code, but it isn't an Evolution X build, and it isn't affiliated with or endorsed by the Evolution X team. See each source repository's license and upstream notices.

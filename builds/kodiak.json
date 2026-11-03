@@ -1,0 +1,23 @@
+{
+  "response": [
+    {
+      "maintainer": "denson9874",
+      "currently_maintained": true,
+      "oem": "Google",
+      "device": "Pixel 11 Pro XL",
+      "filename": "ExpressiveOS-17.0-20261103-kodiak-1.0-Official.zip",
+      "download": "https://ota-mirror.daryldenson-apps.workers.dev/expressiveos/kodiak/ota/ExpressiveOS-17.0-20261103-kodiak-1.0-Official.zip",
+      "timestamp": 1793714349,
+      "md5": "b7dd0b37ccd433e25d7f576407e570c9",
+      "sha256": "51e51b54ae1f6d5d8c153955fc2450400efbb3732c716c5155441ba30912d6ed",
+      "size": 3571634166,
+      "version": "1.0",
+      "buildtype": "user",
+      "os_patch_level": "2026-10-01",
+      "forum": "",
+      "firmware": "https://developers.google.com/android/images#kodiak",
+      "paypal": "",
+      "github": "denson9874"
+    }
+  ]
+}
