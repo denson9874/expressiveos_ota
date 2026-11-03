@@ -1,0 +1,23 @@
+{
+  "response": [
+    {
+      "maintainer": "denson9874",
+      "currently_maintained": true,
+      "oem": "Google",
+      "device": "Pixel 11",
+      "filename": "ExpressiveOS-17.0-20261103-cubs-1.0-Official.zip",
+      "download": "https://ota-mirror.daryldenson-apps.workers.dev/expressiveos/cubs/ota/ExpressiveOS-17.0-20261103-cubs-1.0-Official.zip",
+      "timestamp": 1793716762,
+      "md5": "e4a09046c96fe2ac55bc3bb5f1bd1bfb",
+      "sha256": "2faffef4cfe8c599665d7e2e6f82e09f74aaa2ceb5174718909d275a92e06827",
+      "size": 3569614163,
+      "version": "1.0",
+      "buildtype": "user",
+      "os_patch_level": "2026-10-01",
+      "forum": "",
+      "firmware": "https://developers.google.com/android/images#cubs",
+      "paypal": "",
+      "github": "denson9874"
+    }
+  ]
+}

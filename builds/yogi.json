@@ -1,0 +1,23 @@
+{
+  "response": [
+    {
+      "maintainer": "denson9874",
+      "currently_maintained": true,
+      "oem": "Google",
+      "device": "Pixel 11 Pro Fold",
+      "filename": "ExpressiveOS-17.0-20261103-yogi-1.0-Official.zip",
+      "download": "https://ota-mirror.daryldenson-apps.workers.dev/expressiveos/yogi/ota/ExpressiveOS-17.0-20261103-yogi-1.0-Official.zip",
+      "timestamp": 1793721370,
+      "md5": "7bf4c78b0996768e4ba09618f588b1d1",
+      "sha256": "5ec9b51672eea700a4e7a9d9e019ab194f62eceb6b212574cb12478c99c4ab27",
+      "size": 3457694847,
+      "version": "1.0",
+      "buildtype": "user",
+      "os_patch_level": "2026-10-01",
+      "forum": "",
+      "firmware": "https://developers.google.com/android/images#yogi",
+      "paypal": "",
+      "github": "denson9874"
+    }
+  ]
+}
