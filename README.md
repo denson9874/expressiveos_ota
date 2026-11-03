@@ -1,12 +1,13 @@
 # expressiveos_ota
 
-Over-the-air update information for denson9874's ExpressiveOS builds: cheetah (Pixel 7 Pro).
+Over-the-air update information for denson9874's ExpressiveOS builds: cheetah (Pixel 7 Pro) and
+husky (Pixel 8 Pro).
 
 ExpressiveOS is its own ROM: its builds are signed with ExpressiveOS-only keys, and this repo
 belongs to ExpressiveOS alone. Moving between ExpressiveOS and any other ROM always needs a clean
 install.
 
-The cheetah device tree in an ExpressiveOS build points its Updater here, at the files on `main`:
+An ExpressiveOS build's Updater reads the files here, on `main`:
 
 - `builds/<device>.json`: the latest build, in the Updater's format. The download is the signed
   A/B OTA package, uploaded to

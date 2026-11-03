@@ -1,0 +1,23 @@
+{
+  "response": [
+    {
+      "maintainer": "denson9874",
+      "currently_maintained": true,
+      "oem": "Google",
+      "device": "Pixel 8 Pro",
+      "filename": "ExpressiveOS-17.0-20261103-husky-1.0-Official.zip",
+      "download": "https://ota-mirror.daryldenson-apps.workers.dev/expressiveos/husky/ota/ExpressiveOS-17.0-20261103-husky-1.0-Official.zip",
+      "timestamp": 1793698334,
+      "md5": "1cc4c6d80fd20c75d72e3aeab11d8310",
+      "sha256": "78eb8ffcf4aeb456378445f511aadb9021aaf549673a2928097a0690cbff1496",
+      "size": 3024728703,
+      "version": "1.0",
+      "buildtype": "user",
+      "os_patch_level": "2026-10-01",
+      "forum": "",
+      "firmware": "https://developers.google.com/android/images#husky",
+      "paypal": "",
+      "github": "denson9874"
+    }
+  ]
+}
