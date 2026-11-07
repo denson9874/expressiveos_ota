@@ -1,45 +1,54 @@
-ExpressiveOS 1.0 for the Pixel 11 Pro XL — First Bloom
+ExpressiveOS 1.1 for the Pixel 11 Pro XL — Golden Harvest
 ==============================
 
-ExpressiveOS 1.0 is the first release of ExpressiveOS, an Android 17 ROM that adds to the Pixel experience instead of taking anything away. It builds in Expressive Launcher, gathers theming into one Studio, dresses your phone up for the holidays, and keeps the stock Pixel firmware underneath. Coming from stock Android or another ROM, installing it wipes the phone, so back up first.
+ExpressiveOS 1.1 brings the November 2026 Android security patch, gets Now Playing recognizing songs again, shows these notes in the Updater, and builds in Expressive Launcher 5.1.1.
+It also fixes recovery and fastboot mode on the Pixel 11 series.
+On 1.0, it's a smaller update made just for your build: open the Updater and install it, and your apps and data stay. Coming from stock Android or another ROM, installing it wipes the phone, so back up first.
 
 ───────────────────────
 
-✨ What's in ExpressiveOS 1.0
+✨ What's New & Improved
 ==============================
 
-1. 🏠 Expressive Launcher, built in
-- Expressive Launcher is your Home screen and also runs Recents, so Overview, swipe up and quick switch all go through it.
+1. 🛡️ The November 2026 security patch
+- Before: 1.0 had the October 2026 security patch.
+- Now: 1.1 brings LineageOS's November update, with security patch level 2026-11-01. It carries Google's November fixes for the framework, media, Bluetooth, Wi-Fi, NFC and telephony, plus small updates to LineageOS's own apps.
 
-2. 🎨 Studio, with the Bloom look
-- Studio, in Settings, puts ExpressiveOS's customization in one place: themes, colours, fonts, wallpaper styles, clock styles, the lock screen, the status bar, Quick Settings and more.
-- The Bloom petal logo and palette run through Settings.
-- What's new, at the bottom of Studio, shows these notes.
+2. 🎵 Now Playing recognizes songs again
+- Before: Now Playing stayed on "Downloading song database", so it never recognized a song. The part of Android System Intelligence that fetches the database was cut off from the network.
+- Now: the database downloads in the background, and Now Playing shows what's playing around you. The per-app network switch still works for every app.
 
-3. 🎃 Holiday themes
-- In Studio > Holiday themes, ExpressiveOS can dress the phone up for the holidays: wallpaper, colours, Settings icons, the Quick Settings header, the lock screen clock and the boot animation.
-- On Automatic, a theme switches on by itself at the first screen-off after midnight on the holiday's first day, and off again after its last day. A quiet notification lets you skip it for the year.
-- You can try any theme early from the same page.
+3. 📝 The Updater shows what's new
+- Before: the Updater offered an update without its notes. Only What's new in Studio showed them.
+- Now: the Updater shows these notes for the update it offers, before you install it.
 
-4. 🔄 Updates over the air
-- The built-in Updater checks for new ExpressiveOS releases and installs them over the air, with no computer needed.
-- From the next release, it also offers a smaller update made for the exact build you're on, next to the full one.
-- To install an update package you downloaded yourself, open the Updater's menu and tap Install local update.
+4. 📦 Smaller updates
+- Before: every update was the whole system, a download of several gigabytes.
+- Now: on 1.0, the Updater offers a smaller update made for exactly the build you're on, next to the full one. Each later release does the same for the build before it.
 
-5. 🔓 Root is your choice
-- ExpressiveOS ships without root, and nothing in it needs root. If you want root, adding it is up to you.
+5. 🏠 Expressive Launcher 5.1.1, built in
+- The 3-button navigation order switch works: Android 17's switch that swaps back and recents now changes the bar, in portrait, landscape and on a foldable's big screen.
+- Small folders can be renamed again: a Home folder with 4 apps or fewer shows its name, so you can tap it to rename the folder.
+- The drawer blurs properly after you switch between full screen and bottom sheet, with no ghost of the drawer left on Home.
+- Smartspacer cards keep their first letters on short At a Glance rows.
 
-6. 📶 Your carrier features stay
-- The stock Pixel firmware, modem and IMS are kept, so calls, VoLTE and Wi-Fi Calling run on the same parts as on stock Android.
+6. 🔧 Recovery and fastboot mode work
+- Before: on the Pixel 11 series, rebooting to recovery or to fastboot mode left the phone on the G logo, with nothing shown and nothing over USB. Anything that goes through recovery could hang the same way.
+- Now: recovery shows its menu, fastboot mode connects over USB within seconds, and both reboot back to Android as on stock.
+
+🌸 Smaller touches
+- The E-shaped fingerprint icon is now the Bloom mark. If you had picked it, you get Bloom automatically, with no setting to change.
+- Tap Build number in Settings enough times and the message now reads "You're blooming... just BACKWARDS!"
+- Under the hood, ExpressiveOS's build files, overlays and signing setup now use ExpressiveOS's own names.
 
 ───────────────────────
 
 😄 ROM Humor
 ==============================
 
-🌸 Most ROMs bloom when they boot. This one checked the calendar first, then booked Thanksgiving.
+🎵 Now Playing spent all of October listening closely and recognizing nothing. It says it was just enjoying the music.
 
-🔄 For its whole first month, the Updater told everyone they were up to date. Technically, it was right.
+📦 The Updater finally has something to offer, and it packed light.
 
 ───────────────────────
 
@@ -47,33 +56,36 @@ ExpressiveOS 1.0 is the first release of ExpressiveOS, an Android 17 ROM that ad
 ==============================
 
 - Who it's for: the Pixel 11 Pro XL (kodiak) only. Install the build made for your exact phone.
-- Still being worked on:
-  - The Updater doesn't show these notes yet, but What's new in Studio does. The fix is in the next release.
+- Updating from 1.0: open the Updater and install 1.1; your apps and data stay. If you added root yourself, an update replaces the boot images, so add it again afterwards.
+- Installing fresh: ExpressiveOS's packages don't carry the bootloader or modem. Flash Google's latest Android 17 factory image for your phone first, then ExpressiveOS, with the web installer or fastboot.
+- Found a bug? Post it in the Bugs topic of the Expressive Group on Telegram.
 - Validation:
+  - The recovery and fastboot mode fix was checked on a Pixel 11 Pro XL, and this build comes from the same sources as the Pixel 7 Pro build, which was checked on a phone before release.
 
 ───────────────────────
 
 🧩 Release Riddle
 ==============================
 
-I wake up after midnight, wait for you to look away, and then change everything you see. When the day is over, I put it all back as if nothing happened. What am I?
+I can name the song in the room before the chorus comes around, yet for a whole month I couldn't find a single one. What am I?
 
-Answer: Holiday themes! They switch at the first screen-off after midnight, so nothing changes while you're looking. 🎃
+Answer: Now Playing! It couldn't download its song database on 1.0. Since 1.1 it can, and it's back to naming that tune. 🎵
 
 ───────────────────────
 
 🛡️ Verification & Technical Details
 ==============================
 
-- ROM Version: 1.0, Official
-- Build: ExpressiveOS-17.0-20261103-kodiak-1.0-Official
-- Android: 17, security patch 2026-10-01
-- Fastboot package SHA-256: c8b9c410bb8293da08018ebfa362eab82ed2685e49b36b734ffe69eeb02ea1e7
-- Kit revision: 9cec5d1ce8bb485d508b52f2663d8dd8cd063cc8
+- ROM Version: 1.1, Official
+- Build: ExpressiveOS-17.0-20261107-kodiak-1.1-Official
+- Android: 17, security patch 2026-11-01
+- Fastboot package SHA-256: d3249dfa0d20f77d36213b8f6d6b2618c4c93d9deb0cd347b1e4aee441dd5343
+- Kit revision: 18547fbbb49dae54014a1ec29ab99ebe52c3a718
+- Signing keys: the same ExpressiveOS release keys as 1.0, so 1.1 installs over 1.0 as an update.
 
 🔗 Links & Downloads:
 - Web installer: https://expressiveos-flash.daryldenson-apps.workers.dev
-- Downloads: https://sourceforge.net/projects/denson9874-s-user-builds/files/expressiveos/kodiak/
+- Downloads: https://expressiveos-flash.daryldenson-apps.workers.dev
 - Source code: https://github.com/ExpressiveOS
 - Announcements Channel: @ExpressiveGroup (https://t.me/ExpressiveGroup)
 
