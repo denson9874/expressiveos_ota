@@ -1,54 +1,48 @@
-ExpressiveOS 1.1 for the Pixel 11 Pro Fold — Golden Harvest
+ExpressiveOS 1.1.1 for the Pixel 11 Pro Fold — Golden Harvest
 ==============================
 
-ExpressiveOS 1.1 brings the November 2026 Android security patch, gets Now Playing recognizing songs again, shows these notes in the Updater, and builds in Expressive Launcher 5.1.1.
-It also fixes recovery and fastboot mode on the Pixel 11 series.
-On 1.0, it's a smaller update made just for your build: open the Updater and install it, and your apps and data stay. Coming from stock Android or another ROM, installing it wipes the phone, so back up first.
+ExpressiveOS 1.1.1 is a small security and stability update to 1.1. It tightens the checks on system features that regular apps should never reach, and fixes a handful of bugs found since 1.1.
+On 1.1, it's a smaller update made just for your build: open the Updater and install it, and your apps and data stay. On 1.0, the Updater offers the full update, and your apps and data stay too. Coming from stock Android or another ROM, installing it wipes the phone, so back up first.
 
 ───────────────────────
 
 ✨ What's New & Improved
 ==============================
 
-1. 🛡️ The November 2026 security patch
-- Before: 1.0 had the October 2026 security patch.
-- Now: 1.1 brings LineageOS's November update, with security patch level 2026-11-01. It carries Google's November fixes for the framework, media, Bluetooth, Wi-Fi, NFC and telephony, plus small updates to LineageOS's own apps.
+1. 🛡️ Security fixes
+- Before: a few system features that ExpressiveOS inherited didn't check carefully enough which app was asking.
+- Now: they answer only Android itself and the apps built into ExpressiveOS. App Lock, the private space, Game Space, freeform windows, the lock screen weather and the AirPods pop-up work as before. This update matters for every phone, so install it soon.
 
-2. 🎵 Now Playing recognizes songs again
-- Before: Now Playing stayed on "Downloading song database", so it never recognized a song. The part of Android System Intelligence that fetches the database was cut off from the network.
-- Now: the database downloads in the background, and Now Playing shows what's playing around you. The per-app network switch still works for every app.
+2. 🔐 Privacy
+- App Data Backup is gone: it saved copies of your apps' data, sign-ins included, as unencrypted archives (unless you set a passphrase) in your phone's storage, where other apps with file access could read them. It's no longer part of ExpressiveOS. If you made backups with it, delete the AppDataBackup folder in your phone's storage.
+- Now Playing stays on your phone: with the Dynamic Bar on, a song Now Playing recognized without cover art was looked up on an online music search. Now the Dynamic Bar shows the notification's own artwork, or a music note when there is none, and nothing leaves the phone.
 
-3. 📝 The Updater shows what's new
-- Before: the Updater offered an update without its notes. Only What's new in Studio showed them.
-- Now: the Updater shows these notes for the update it offers, before you install it.
+3. 🔒 App Lock hides notifications right away
+- Before: after you locked an app, its notifications could keep showing their content until SystemUI restarted.
+- Now: a newly locked app's notifications are hidden in the notification shade and on the lock screen as soon as you lock it, including ones already showing.
 
-4. 📦 Smaller updates
-- Before: every update was the whole system, a download of several gigabytes.
-- Now: on 1.0, the Updater offers a smaller update made for exactly the build you're on, next to the full one. Each later release does the same for the build before it.
+4. 🧭 Navigation bar styles work with Expressive Launcher
+- Before: Studio's navigation bar styles listed only Default, or changed nothing, because they targeted a launcher that doesn't draw the bar.
+- Now: the styles list and apply for Expressive Launcher, which draws your navigation bar. If you had picked a style before, pick it again once after updating.
 
-5. 🏠 Expressive Launcher 5.1.1, built in
-- The 3-button navigation order switch works: Android 17's switch that swaps back and recents now changes the bar, in portrait, landscape and on a foldable's big screen.
-- Small folders can be renamed again: a Home folder with 4 apps or fewer shows its name, so you can tap it to rename the folder.
-- The drawer blurs properly after you switch between full screen and bottom sheet, with no ghost of the drawer left on Home.
-- Smartspacer cards keep their first letters on short At a Glance rows.
-
-6. 🔧 Recovery and fastboot mode work
-- Before: on the Pixel 11 series, rebooting to recovery or to fastboot mode left the phone on the G logo, with nothing shown and nothing over USB. Anything that goes through recovery could hang the same way.
-- Now: recovery shows its menu, fastboot mode connects over USB within seconds, and both reboot back to Android as on stock.
-
-🌸 Smaller touches
-- The E-shaped fingerprint icon is now the Bloom mark. If you had picked it, you get Bloom automatically, with no setting to change.
-- Tap Build number in Settings enough times and the message now reads "You're blooming... just BACKWARDS!"
-- Under the hood, ExpressiveOS's build files, overlays and signing setup now use ExpressiveOS's own names.
+5. 🔧 Fixes
+- Lock screen widgets now follow Bluetooth, flashlight and ringer changes.
+- Pulse with vibration on only vibrates while music plays, and stops when the music stops.
+- Gaming mode no longer stays on when the phone restarts during a game.
+- Studio: the battery bar's low battery colour applies, the wallpaper style options match the style you just picked, Dynamic Island's options show once, and Settings' wallpaper type screen opens its own page again.
+- The Updater tells you when a new release is out, shows the new release's own notes (1.1 showed the installed build's), refuses a local update made for a different phone, and never offers an update with an older security patch, which would erase the phone.
+- Lock screen notifications with blur on are prepared once instead of twice, so they show up faster.
+- Less background work: with the Dynamic Bar off, SystemUI no longer checks the battery time estimate every 2 minutes while you use the phone.
+- Google Photos no longer hides its Pixel-only features on the Pixel 11 series.
 
 ───────────────────────
 
 😄 ROM Humor
 ==============================
 
-🎵 Now Playing spent all of October listening closely and recognizing nothing. It says it was just enjoying the music.
+🛡️ The system services used to answer anyone who knocked. Now they check the peephole first.
 
-📦 The Updater finally has something to offer, and it packed light.
+🧭 The navigation bar styles spent a whole release dressing up the wrong launcher.
 
 ───────────────────────
 
@@ -56,32 +50,32 @@ On 1.0, it's a smaller update made just for your build: open the Updater and ins
 ==============================
 
 - Who it's for: the Pixel 11 Pro Fold (yogi) only. Install the build made for your exact phone.
-- Updating from 1.0: open the Updater and install 1.1; your apps and data stay. If you added root yourself, an update replaces the boot images, so add it again afterwards.
+- Updating from 1.1 or 1.0: open the Updater and install 1.1.1; your apps and data stay. If you added root yourself, an update replaces the boot images, so add it again afterwards.
 - Installing fresh: ExpressiveOS's packages don't carry the bootloader or modem. Flash Google's latest Android 17 factory image for your phone first, then ExpressiveOS, with the web installer or fastboot.
 - Found a bug? Post it in the Bugs topic of the Expressive Group on Telegram.
 - Validation:
-  - This build comes from the same sources as the Pixel 11 Pro XL and Pixel 7 Pro builds, and has the same recovery and fastboot mode fix that was checked on a Pixel 11 Pro XL.
+  - This build comes from the same sources as the Pixel 7 Pro build, which was checked on a phone before release.
 
 ───────────────────────
 
 🧩 Release Riddle
 ==============================
 
-I can name the song in the room before the chorus comes around, yet for a whole month I couldn't find a single one. What am I?
+I guard the door to your locked apps, your private space and your system's settings, and in 1.1.1 I finally learned to ask for ID. What am I?
 
-Answer: Now Playing! It couldn't download its song database on 1.0. Since 1.1 it can, and it's back to naming that tune. 🎵
+Answer: A permission check! 1.1.1 adds them where they were missing, so only Android and the apps built into ExpressiveOS get through. 🛡️
 
 ───────────────────────
 
 🛡️ Verification & Technical Details
 ==============================
 
-- ROM Version: 1.1, Official
-- Build: ExpressiveOS-17.0-20261107-yogi-1.1-Official
+- ROM Version: 1.1.1, Official
+- Build: ExpressiveOS-17.0-20261108-yogi-1.1.1-Official
 - Android: 17, security patch 2026-11-01
-- Fastboot package SHA-256: 2e27e84e13c480e51e02f1a44359b97964cef7166e82b79d25c04d7b573a555f
-- Kit revision: 18547fbbb49dae54014a1ec29ab99ebe52c3a718
-- Signing keys: the same ExpressiveOS release keys as 1.0, so 1.1 installs over 1.0 as an update.
+- Fastboot package SHA-256: f9f0640659264cb7dd3bcc8aad3e5446ac9c8aa864be911199b3a9a1bb7003a4
+- Kit revision: f412cad21502d938c2a93db0a7af8fad2f88eb3c
+- Signing keys: the same ExpressiveOS release keys as 1.0 and 1.1, so 1.1.1 installs over either as an update.
 
 🔗 Links & Downloads:
 - Web installer: https://expressiveos-flash.daryldenson-apps.workers.dev
