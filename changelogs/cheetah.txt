@@ -1,38 +1,48 @@
-ExpressiveOS 1.1.2 for the Pixel 7 Pro — Golden Harvest
+ExpressiveOS 1.2 for the Pixel 7 Pro — Frost Chrysanthemum
 ==============================
 
-ExpressiveOS 1.1.2 is a small update to 1.1.1: Google's on-device AI apps can reach Private Compute Services again, Circle to Search works, and you can pick Pixel Launcher as your home screen in Expressive Studio.
-On 1.1.1, it's a small update made just for your build: open the Updater and install it, and your apps and data stay. On 1.1 or 1.0, the Updater offers the full update, and your apps and data stay too. Coming from stock Android or another ROM, installing it wipes the phone, so back up first.
+ExpressiveOS 1.2 is the November Pixel Drop release: Google's November software for your phone underneath, newer Google apps, a battery charge limit that stays on, a fix for a font that crashed apps, a clearer Updater, and security and battery fixes.
+On 1.1.2, it's a small update made just for your build: open the Updater and install it, and your apps and data stay. On an older ExpressiveOS, the Updater offers the full update, and your apps and data stay too. Coming from stock Android or another ROM, installing it wipes the phone, so back up first.
 
 ───────────────────────
 
 ✨ What's New & Improved
 ==============================
 
-1. 🧠 On-device AI can connect again
-- Before: a Google config file in ExpressiveOS let only the Now Playing app connect to Private Compute Services, the part of Android that downloads models for Google's on-device features. Android turned everything else away, so AICore, Gboard and Android System Intelligence couldn't even ask for their models or updates.
-- Now: they can reach it again, as on a stock Pixel. Now Playing keeps recognizing songs as before.
-- Thanks to Logan in the Expressive Group for the log that found it.
+1. 🍂 Built on Google's November Pixel Drop
+- Before: the update carried your phone's October firmware.
+- Now: it carries the bootloader and modem from Google's November Pixel Drop image for the Pixel 7 Pro (CP4A.261105.040.A1).
+- Many of the built-in Google apps are updated to the versions in the November Pixel Drop.
 
-2. 🏠 Pixel Launcher, if you want it
-- Before: Expressive Launcher was your only home screen.
-- Now: Expressive Studio > Themes > Home screen > Launcher switches between Expressive Launcher and Pixel Launcher. The phone restarts once, and the launcher you picked runs both your home screen and recent apps. Switch back the same way. Expressive Launcher stays the default.
-- If you use a navigation bar style, pick it again after switching launchers.
+2. 🔋 "Limit to 80%" stays on
+- Before: Settings > Battery > Charging optimisation > Limit to 80% turned itself off as soon as you left the page.
+- Now: it stays on and turns on the phone's 80% charging limit.
+- Thanks to Warren in the Expressive Group for reporting it.
 
-3. 🔍 Circle to Search
-- Before: touching and holding the navigation handle did nothing. The Circle to Search setting was never switched on, and Expressive Launcher couldn't start it either.
-- Now: hold the navigation handle to search what's on your screen, with Expressive Launcher or Pixel Launcher. It's on from the start, and you can turn it off in Settings > System > Circle to Search. Expressive Launcher 5.1.3, built in, adds the missing piece on its side.
+3. 🔤 The Sans-Serif font no longer crashes apps
+- Before: picking the Sans-Serif font in Expressive Studio could make apps close as they opened.
+- Now: it works like every other font.
+
+4. 🔄 A clearer Updater
+- Before: an update you installed from a file stayed in the list afterwards, and a build with an older security patch was refused without a clear reason.
+- Now: the list is clean after an update, the Updater says plainly why it won't install an older security patch, and What's new can read an update's notes from the update file itself.
+- If you added root yourself, the Updater now reminds you how to keep it before you restart.
+
+5. 🔒 Security and battery fixes
+- App Lock: a locked app could still show through the Dynamic Bar, and a locked app's notification text could leak. Both are closed.
+- Wi-Fi: the phone scanned for networks every 10 seconds from startup until the screen first turned off. It doesn't any more.
+- Holiday themes: if applying a holiday wallpaper fails, your own wallpaper and its backup are kept.
 
 ───────────────────────
 
 😄 ROM Humor
 ==============================
 
-🧠 Private Compute Services had a guest list with exactly one name on it, and it was the music app.
+🍂 Google dropped a Pixel Drop. We caught it before it hit the ground.
 
-🏠 Pixel Launcher asked to move back in. It has to share the house now.
+🔋 The 80% limit kept forgetting its own promise. It writes it down now.
 
-🔍 The navigation handle finally has something to hold on to.
+🌼 Most flowers are done by November. Chrysanthemums didn't get the memo.
 
 ───────────────────────
 
@@ -40,32 +50,32 @@ On 1.1.1, it's a small update made just for your build: open the Updater and ins
 ==============================
 
 - Who it's for: the Pixel 7 Pro (cheetah) only. Install the build made for your exact phone.
-- Updating from 1.1.1, 1.1 or 1.0: open the Updater and install 1.1.2; your apps and data stay. If you added root yourself, an update replaces the boot images, so add it again afterwards.
-- Installing fresh: ExpressiveOS's packages don't carry the bootloader or modem. Flash Google's latest Android 17 factory image for your phone first, then ExpressiveOS, with the web installer or fastboot.
+- Updating from 1.1.2 or older: open the Updater and install 1.2; your apps and data stay. If you added root yourself, an update replaces the boot images, so add it again afterwards.
+- Installing fresh: ExpressiveOS's fastboot packages don't carry the bootloader or modem. Flash Google's November Android 17 factory image for your phone first, then ExpressiveOS, with the web installer or fastboot.
 - Found a bug? Post it in the Bugs topic of the Expressive Group on Telegram.
 - Validation:
-  - This build was installed through the Updater on a Pixel 7 Pro and checked before release, including Circle to Search and switching to Pixel Launcher and back.
+  - 1.2 test builds were installed through the Updater on a Pixel 7 Pro and checked before release, including the Limit to 80% switch.
 
 ───────────────────────
 
 🧩 Release Riddle
 ==============================
 
-I'm one line in a config file, and I kept every app but one away from your phone's on-device AI. 1.1.2 deleted me. What am I?
+I bloom when the others have gone, I open in petals of frost, and this month I'm a version number. What am I?
 
-Answer: An allow-association rule! With Now Playing as the only app on it, Android blocked AICore and Gboard. Now the door is open for them again. 🧠
+Answer: The chrysanthemum! November's flower, and the name of ExpressiveOS 1.2: Frost Chrysanthemum. 🌼
 
 ───────────────────────
 
 🛡️ Verification & Technical Details
 ==============================
 
-- ROM Version: 1.1.2, Official
-- Build: ExpressiveOS-17.0-20261108-cheetah-1.1.2-Official
+- ROM Version: 1.2, Official
+- Build: ExpressiveOS-17.0-20261111-cheetah-1.2-Official
 - Android: 17, security patch 2026-11-01
-- Fastboot package SHA-256: fecb590f4e0a7910f50c5db48d6197b5195af0b46a7a898ed05ae3812efb2a62
-- Kit revision: 286530c742e53554305e40eb788dcccf8847b2e4
-- Signing keys: the same ExpressiveOS release keys as 1.0, 1.1 and 1.1.1, so 1.1.2 installs over any of them as an update.
+- Fastboot package SHA-256: d6c727d9c1dbbf44c5e3efc197f68c3fa587edd819b1c5cdd4b4016968a247ef
+- Kit revision: ea8cfbd51c305cb1bad540a1bb5f71c5fe2d74f1
+- Signing keys: the same ExpressiveOS release keys as every release since 1.0, so 1.2 installs over any of them as an update.
 
 🔗 Links & Downloads:
 - Web installer: https://expressiveos-flash.daryldenson-apps.workers.dev
