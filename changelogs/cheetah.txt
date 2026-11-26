@@ -1,43 +1,40 @@
-ExpressiveOS 1.3 for the Pixel 7 Pro — Winter Camellia
+ExpressiveOS 1.3.1 for the Pixel 7 Pro — Winter Camellia
 ==============================
 
-ExpressiveOS 1.3 comes with root built in, an Adaptive minimum refresh rate and working lock screen widgets. Nothing gets root until you allow it.
-On 1.2, open the Updater and install it, and your apps and data stay. Coming from stock Android or another ROM, installing it wipes the phone, so back up first.
+ExpressiveOS 1.3.1 is an in-place polish update for 1.3 with RCS messaging fixes, Expressive Launcher 5.1.9, updated Wild Kernels r23 root out of the box, and reliability fixes across OTA updates, audio and contacts.
+On 1.3 (or an earlier 1.x release), open Settings → System → System updates and install 1.3.1 — your apps and data stay right where they are.
 
 ───────────────────────
 
 ✨ What's New & Improved
 ==============================
 
-1. 🔓 Root, out of the box
-- Before: getting root meant patching the boot image yourself and adding a separate module to hide it.
-- Now: root is built into ExpressiveOS's kernel (Wild Kernels' kernel with BakaSU and susfs), so no extra module is needed to hide it. Nothing gets root until you allow it in the BakaSU app.
-- The BakaSU app doesn't come with the ROM. Install the Nightly build: https://github.com/Baka-SU/BakaSU/actions. Open the latest successful run and download its APK. You need a GitHub account to download it.
-- Don't use BakaSU's Release build (v4.2.0-rc3) for now: it's older than the root built into 1.3, so it shows "Manager update required". Root still works, but the Nightly clears it. "Direct install" isn't needed: root is already in 1.3's kernel.
-- Don't want root? Download the file ending in boot-stock.img from the same downloads page as your build, and flash it to the boot partition: fastboot flash boot <that file>.
-- Installing with the web installer? Pick BakaSU or Stock before you install, and it puts the right boot image on both slots.
+1. 💬 RCS messaging & Expressive Studio polish
+- RCS setup & carrier services: fixed background registration issues in Google Messages and carrier IMS services so RCS chats connect reliably after setup or an update.
+- Expressive Studio: importing an XML configuration file now opens straight to your Downloads folder and accepts both plain XML and Base64-encoded files, and Google Photos legacy device compatibility now defaults to off on fresh installs so native Pixel camera and backup features stay active out of the box.
 
-2. 🌀 An Adaptive minimum refresh rate
-- Before: the screen never went below 60 Hz unless you changed it, and Settings showed "Minimum refresh rate: 60 Hz" even on screens that go lower.
-- Now: the minimum is Adaptive, so the screen drops as low as it can when nothing moves, which saves battery. Settings > Display > Screen refresh rate shows "Adaptive, up to 120 Hz". You can still pick a fixed minimum there.
+2. 🚀 Expressive Launcher 5.1.9
+- Ahead-of-time compiled: Expressive Launcher is now compiled into native code during the build, making cold starts, app-drawer scrolling and Recents gesture transitions noticeably snappier right after boot.
+- Lower memory & idle drain: reduced background graphics memory and idle wakeups on Adaptive refresh-rate screens.
+- Pixel Launcher mode switch: fixed a boot-time property check so switching between Expressive Launcher and Pixel Launcher in Expressive Studio applies cleanly across reboots.
 
-3. 🧩 Lock screen widgets work with Expressive Launcher
-- Before: tapping "Add widget" on the lock screen widget hub did nothing when Expressive Launcher was your Home app.
-- Now: it opens Expressive Launcher's widget picker. In Pixel Launcher mode, Pixel Launcher's picker opens as before.
+3. 🔓 Updated Wild Kernels r23
+- Updated to Wild Kernels r23 (6.1.172 June 2026 GKI with BakaSU and susfs built in). Nothing gets root until you allow it in the BakaSU app.
+- Install the BakaSU manager APK from Nightly (https://github.com/Baka-SU/BakaSU/actions) or Release (https://github.com/Baka-SU/BakaSU/releases), or flash the matching boot-stock.img if you prefer an unrooted boot image.
 
-4. 🔧 Smaller fixes
-- Recovery shows which ExpressiveOS version is installed.
+4. 🔧 Audio, OTA, Recovery & Contacts fixes
+- Post-OTA boot stability: fixed two Virtual A/B snapshot merge bugs (snapuserd unaligned sector buffer sizing and pkill -SIGNAL argument parsing) that could interrupt background partition merges after an OTA reboot.
+- Custom contact ringtones: assigning a custom ringtone to an individual contact in Google Contacts works again without crashing.
+- Face Unlock enrollment: rotating or folding the screen during Face Unlock setup no longer opens a duplicate enrollment screen.
 
 ───────────────────────
 
 😄 ROM Humor
 ==============================
 
-🌱 Root used to be a weekend project. Now it comes in the box, and it still asks before it touches anything.
+💬 "Connecting…" is a great status message when it lasts two seconds, not two days. RCS got the memo.
 
-🖥️ Your screen spent all of 1.2 insisting it couldn't go below 60 Hz. It could. It just needed permission.
-
-🌸 Camellias bloom in the dead of winter. This one's a little early.
+🏃 Expressive Launcher finished compiling itself before your phone even left the build server.
 
 ───────────────────────
 
@@ -45,39 +42,37 @@ On 1.2, open the Updater and install it, and your apps and data stay. Coming fro
 ==============================
 
 - Who it's for: the Pixel 7 Pro (cheetah) only. Install the build made for your exact phone.
-- Updating from 1.2 or older: open the Updater and install 1.3; your apps and data stay. If you patched the boot image for root yourself, you don't need to again after this update. Install the BakaSU app instead.
-- Installing fresh: ExpressiveOS's fastboot packages don't carry the bootloader or modem. Flash Google's November 2026 factory image for your phone first (CP4A.261105.040, not a newer one or a beta), then ExpressiveOS, with the web installer or fastboot. On the Pixel 11 series, the installer and fastboot refuse a phone that has another bootloader.
-- A new web installer: it has a new look, and while it installs it grows a flower in your phone's colours, from a seed to a full bloom.
+- Updating from 1.3: open the Updater and install 1.3.1; phones on the November 15 1.3 release receive a compact incremental update, and your apps and data stay intact.
+- Looking ahead to ExpressiveOS 2.0 (December): 1.3.1 installs in place on the 1.x channel. Next month's ExpressiveOS 2.0 moves onto a clean pure-AOSP Android 17 foundation with its own 2.0 update channel — 1.3.1 will never auto-update to 2.0 unexpectedly, and upgrading from 1.3.1 to 2.0 will require a one-time clean install (back up your data first; all 2.x updates after 2.0 will install in place as usual).
+- Clean installs: flash Google's November 2026 factory image (CP4A.261105.040) first, then install ExpressiveOS 1.3.1 with the web installer or fastboot.
 - Found a bug? Post it in the Bugs topic of the Expressive Group on Telegram.
-- Validation:
-  - A 1.3 test build's boot image was installed on a Pixel 7 Pro and checked before release: root through BakaSU and susfs work.
 
 ───────────────────────
 
 🧩 Release Riddle
 ==============================
 
-I bloom when the snow says nothing should, and when I'm done I fall whole, not petal by petal. This month I'm a version number. What am I?
+I arrive between autumn's bloom and December's snow, carrying smaller packages for phones already home and a faster front door for every swipe. What am I?
 
-Answer: The camellia! Winter's flower, and the name of ExpressiveOS 1.3: Winter Camellia. 🌸
+Answer: ExpressiveOS 1.3.1! Winter Camellia, polished and ready before December lands. 🌸
 
 ───────────────────────
 
 🛡️ Verification & Technical Details
 ==============================
 
-- ROM Version: 1.3, Official
-- Build: ExpressiveOS-17.0-20261115-cheetah-1.3-Official
+- ROM Version: 1.3.1, Official
+- Build: ExpressiveOS-17.0-20261126-cheetah-1.3.1-Official
 - Android: 17, security patch 2026-11-01
-- Fastboot package SHA-256: efb4d6482a0f5f3a469a4f54d6a46cf269cea4e02eafa4be616aeaceb010eb17
-- Kit revision: dcd41ca99844532e88b531ad11a07a6786f7ec5a
-- Signing keys: the same ExpressiveOS release keys as every release since 1.0, so 1.3 installs over any of them as an update.
+- Fastboot package SHA-256: 03f3a855f58a930a11d0c77a42f6a7c4dc86bd6292190447e55d90e481224e8e
+- Kit revision: 46ed85cc6e9d63d25d0860f36b40e1b29865d46b
+- Signing keys: the same ExpressiveOS release keys as every release since 1.0, so 1.3.1 installs over 1.3 in place through the Updater.
 
 🔗 Links & Downloads:
 - Web installer: https://expressiveos-flash.daryldenson-apps.workers.dev
 - Downloads: https://expressiveos-flash.daryldenson-apps.workers.dev
-- BakaSU app (Nightly): https://github.com/Baka-SU/BakaSU/actions
+- BakaSU app: Release (https://github.com/Baka-SU/BakaSU/releases) · Nightly (https://github.com/Baka-SU/BakaSU/actions)
 - Source code: https://github.com/ExpressiveOS
 - Announcements Channel: @ExpressiveGroup (https://t.me/ExpressiveGroup)
 
-ExpressiveOS is an independent ROM, made by denson9874 with Claude (Anthropic's AI) as its development partner. It's built on LineageOS and AOSP. See each source repository's license and upstream notices.
+ExpressiveOS is an independent ROM built on AOSP. See each source repository's license and upstream notices.
